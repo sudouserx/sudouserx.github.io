@@ -17,7 +17,7 @@ Then visit `http://localhost:8080`.
 - Page copy and section order: [`index.html`](index.html)
 - Typography and layout: [`css/styles.css`](css/styles.css)
 - Headshot: [`assets/profile.jpg`](assets/profile.jpg)
-- Downloadable CV: [`assets/Ebrahim_Aliyou_Wudu_CV.pdf`](assets/Ebrahim_Aliyou_Wudu_CV.pdf)
+- Downloadable CV: [`assets/Ebrahim_Aliyou_Wudu_CV.pdf`](assets/Ebrahim_Aliyou_Wudu_CV.pdf?v=20260928)
 
 Paper, code, Devpost, and project links are taken from the resume. Hosted PDFs currently live on Google Drive.
 
