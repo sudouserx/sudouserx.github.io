@@ -1,6 +1,6 @@
 # Ebrahim Aliyou Wudu
 
-Static academic homepage for [GitHub Pages](https://pages.github.com/). No build step.
+Static academic homepage for [GitHub Pages](https://pages.github.com/)—applied AI research, founder work, and engineering experience. No build step.
 
 ## Local preview
 
@@ -17,7 +17,7 @@ Then visit `http://localhost:8080`.
 - Page copy and section order: [`index.html`](index.html)
 - Typography and layout: [`css/styles.css`](css/styles.css)
 - Headshot: [`assets/profile.jpg`](assets/profile.jpg)
-- Downloadable CV: [`assets/Ebrahim_Aliyou_Wudu_CV.pdf`](assets/Ebrahim_Aliyou_Wudu_CV.pdf?v=20260928)
+- Downloadable CV: [`assets/Ebrahim_Aliyou_Wudu_Resume.pdf`](assets/Ebrahim_Aliyou_Wudu_Resume.pdf?v=20261029)
 
 Paper, code, Devpost, and project links are taken from the resume. Hosted PDFs currently live on Google Drive.
 

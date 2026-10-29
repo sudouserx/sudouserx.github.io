@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ebrahim Aliyou Wudu</title>
-  <meta name="description" content="AI researcher building robust systems for resource-constrained settings—clinical diagnostics, offline multilingual tools, and health and agriculture AI for underserved communities in Africa.">
+  <meta name="description" content="Applied AI engineer and researcher building and evaluating AI for low-resource settings—LLM prototypes, clinical models, data pipelines, and rigorous accuracy and safety testing in Africa.">
   <meta name="author" content="Ebrahim Aliyou Wudu">
   <link rel="canonical" href="https://sudouserx.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ebrahim Aliyou Wudu">
-  <meta property="og:description" content="AI researcher focused on robust, usable AI in resource-constrained health and agriculture settings across Africa.">
+  <meta property="og:description" content="Applied AI engineer and researcher shipping and evaluating robust AI—offline LLMs, clinical models, and pipelines for underserved communities in Africa.">
   <meta property="og:image" content="assets/profile.jpg">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Ebrahim Aliyou Wudu">
-  <meta name="twitter:description" content="AI researcher focused on robust, usable AI in resource-constrained health and agriculture settings across Africa.">
+  <meta name="twitter:description" content="Applied AI engineer and researcher shipping and evaluating robust AI—offline LLMs, clinical models, and pipelines for underserved communities in Africa.">
   <meta name="twitter:image" content="assets/profile.jpg">
 
   <link rel="icon" href="assets/profile.jpg" type="image/jpeg">
@@ -31,24 +31,24 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#leadership">Leadership</a>
-      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#awards">Awards</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <header class="hero">
       <div>
         <h1>Ebrahim Aliyou Wudu</h1>
-        <p class="role">AI researcher · Addis Ababa, Ethiopia</p>
+        <p class="role">Applied AI engineer and researcher · Addis Ababa, Ethiopia</p>
         <ul class="links">
           <li><a href="mailto:ebrahimaliyou@gmail.com">Email</a></li>
           <li><a href="https://sudouserx.github.io/">Homepage</a></li>
           <li><a href="https://github.com/sudouserx">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/ebrahim-aliyou-wudu">LinkedIn</a></li>
           <li><a href="https://huggingface.co/sudouserx">Hugging Face</a></li>
-          <li><a href="assets/Ebrahim_Aliyou_Wudu_CV.pdf?v=20260928">CV (PDF)</a></li>
+          <li><a href="assets/Ebrahim_Aliyou_Wudu_Resume.pdf?v=20261029">CV (PDF)</a></li>
         </ul>
       </div>
       <img
@@ -63,12 +63,17 @@
       <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
         <p>
-          I am an AI researcher focused on building systems that remain robust and usable in
-          resource-constrained settings—from ECG diagnostics under real clinical noise to
-          offline, multilingual agricultural tools for East African farmers. I am seeking
-          graduate training that bridges technical AI research with human-centered systems
-          design, toward a career developing health and agriculture AI for underserved
+          I am an applied AI engineer and researcher focused on building systems that remain
+          robust and usable in resource-constrained settings—from ECG diagnostics under real
+          clinical noise to offline, multilingual agricultural tools for East African farmers.
+          I ship working prototypes with LLMs, pair them with solid data pipelines and backend
+          engineering, and test them rigorously for accuracy, calibration, and safety. I am
+          seeking graduate training that bridges technical AI research with human-centered
+          systems design, toward a career developing health and agriculture AI for underserved
           communities in Ethiopia and across Africa.
+        </p>
+        <p>
+          I explain technical work plainly and enjoy teaching others to use it.
         </p>
         <p>
           I am an AI research intern at the
@@ -87,7 +92,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h3>sentinelMAS: Evidence-Guided Multi-Agent AI for Histopathology Classification</h3>
+            <h3>sentinelMAS: Evidence-Guided AI for Histopathology Classification</h3>
             <span class="dates">May 2026 – Present</span>
           </div>
           <p class="meta">
@@ -144,7 +149,7 @@
             <span class="dates">August 2026</span>
           </div>
           <p class="meta">
-            Independent research · Digital Minds Research Sprint, Apart Research
+            Independent research · Apart Research sprint
           </p>
           <p>
             Investigated whether latent affective steering produces controlled semantic change
@@ -174,8 +179,39 @@
 
         <article class="entry">
           <div class="entry-head">
+            <h3>Founder, Kuza AI</h3>
+            <span class="dates">August 2026 – Present</span>
+          </div>
+          <p class="meta">
+            Offline agricultural AI assistant for East African farmers · Addis Ababa, Ethiopia
+          </p>
+          <p>
+            Designed an offline-first assistant for crop and livestock questions in English and
+            Swahili, built to run on CPU-only devices where connectivity and extension advice
+            are limited. Curated training data from about 1.45M farmer queries into supervised
+            fine-tuning sets in both languages, plus adversarial and multi-turn examples and DPO
+            preference pairs; fine-tuned Gemma with SFT and DPO end to end.
+          </p>
+          <p>
+            Benchmarked GGUF quantizations for quality, speed, and memory—the selected build runs
+            at about 16.8 tokens/sec on a 7&nbsp;GB RAM laptop via llama.cpp, with safety
+            behavior for unsafe pesticide-dose requests and clarifying questions when queries are
+            ambiguous. Placed 2nd among 1,856 participants in the Africa Deep Tech Challenge
+            2026 (US$4,000 prize).
+          </p>
+          <p class="entry-links">
+            <a href="https://devpost.com/software/kuza-ai">Devpost</a>
+            ·
+            <a href="https://huggingface.co/kuzaai">Models and data</a>
+            ·
+            <a href="https://github.com/sudouserx/adtc-2026-submission-template">Pipeline</a>
+          </p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
             <h3>Co-Founder and Lead Engineer, Gobez</h3>
-            <span class="dates">May 2026 – Present</span>
+            <span class="dates">January 2026 – Present</span>
           </div>
           <p class="meta">
             Free exam-preparation platform for Ethiopian Grade 12 students · gobez.cloud
@@ -191,8 +227,7 @@
             Mastery analytics built on five years of solved national exam questions, plus an
             offline notes feature (“Gobez Bits”) for students without reliable connectivity.
             Grew the platform to 640 registered students (500+ monthly active) across seven
-            partner schools in Addis Ababa. The platform is currently offline pending renewed
-            funding.
+            partner schools in Addis Ababa. The platform is currently paused pending funding.
           </p>
         </article>
 
@@ -232,36 +267,6 @@
         </article>
       </section>
 
-      <section id="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Selected projects</h2>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Kuza AI — Offline Agricultural AI Assistant</h3>
-            <span class="dates">August 2026</span>
-          </div>
-          <p>
-            Co-founded and engineered an English/Swahili agricultural AI system for East
-            African farmers, addressing a regional farmer-to-agricultural-extension-officer
-            ratio of roughly 1:5000, with a focus on low-resource inference under constrained
-            connectivity, memory, and compute. Built multilingual supervised fine-tuning,
-            data-cleaning, model-adaptation, and local-inference pipelines, and benchmarked
-            practical deployment trade-offs for edge-oriented AI.
-          </p>
-          <p>
-            Selected as a semifinalist in the African Deep Tech Challenge (ADTC 2026) and
-            currently competing to reach the top 10 finalists.
-          </p>
-          <p class="entry-links">
-            <a href="https://devpost.com/software/kuza-ai">Devpost</a>
-            ·
-            <a href="https://huggingface.co/kuzaai">Models and data</a>
-            ·
-            <a href="https://github.com/sudouserx/adtc-2026-submission-template">Code</a>
-          </p>
-        </article>
-      </section>
-
       <section id="education" aria-labelledby="education-heading">
         <h2 id="education-heading">Education</h2>
         <article class="entry">
@@ -273,11 +278,11 @@
           <p>
             Bachelor of Technology in Computer Science and Engineering.
             CGPA 8.79/10, First Class with Distinction.
+            Study in India Scholarship recipient, Government of India (2021).
           </p>
           <p class="muted">
             Coursework: Machine Learning, Deep Learning, Algorithm Design,
-            Data Warehousing and Mining, Big Data Analytics, Theory of Computation,
-            Computer Organization and Architecture, Cloud Deployment.
+            Data Warehousing and Mining, Big Data Analytics, Cloud Deployment.
           </p>
         </article>
       </section>
@@ -292,8 +297,10 @@
           </div>
           <p class="meta">Remote, India</p>
           <p>
-            Built AWS-backed backend infrastructure processing 100,000+ data points per month
-            and integrated B2B subscription workflows across Chargebee, Stripe, and Razorpay.
+            Contributed to Olly (<a href="https://askolly.io">askolly.io</a>), an AI-powered
+            review management product for hotels and restaurants. Built AWS-backed backend
+            infrastructure processing 100,000+ data points per month and integrated B2B
+            subscription and billing workflows across Chargebee, Stripe, and Razorpay.
           </p>
         </article>
 
@@ -326,6 +333,10 @@
         <h2 id="awards-heading">Awards and honours</h2>
         <ul class="awards">
           <li>
+            <strong>2nd Place, Africa Deep Tech Challenge</strong>, 2026.
+            Kuza AI offline agricultural assistant (US$4,000 prize; 2nd of 1,856 participants).
+          </li>
+          <li>
             <strong>Study in India Scholarship</strong>, Government of India, 2021.
             Full merit-based government scholarship covering tuition and living costs.
           </li>
@@ -343,21 +354,23 @@
       <section id="skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Technical skills</h2>
         <p>
-          <strong>Research / ML:</strong>
-          PyTorch, TensorFlow, scikit-learn, self-supervised learning, representation learning,
-          interpretability, uncertainty estimation, model evaluation, PEFT/QLoRA, RAG.
+          <strong>LLMs and applied AI:</strong>
+          QLoRA and DPO fine-tuning, dataset curation, quantization and edge inference
+          (llama.cpp, GGUF), RAG, prompt and safety design, model evaluation and calibration,
+          explainability (Grad-CAM++, SHAP, conformal uncertainty).
         </p>
         <p>
-          <strong>LLM research:</strong>
-          Representation engineering, steering vectors, LLM evaluation, LangChain, LangSmith.
+          <strong>Data and software engineering:</strong>
+          Python, SQL, C++, JavaScript, FastAPI, Node.js, PostgreSQL, AWS,
+          ELT/ETL (Meltano, Airbyte, dbt), version control, testing.
         </p>
         <p>
-          <strong>Programming:</strong>
-          Python, C++, JavaScript, SQL, GraphQL.
+          <strong>ML frameworks:</strong>
+          PyTorch, TensorFlow, scikit-learn, Hugging Face.
         </p>
         <p>
-          <strong>Systems:</strong>
-          FastAPI, Node.js, AWS, PostgreSQL, MongoDB.
+          <strong>Domains:</strong>
+          agriculture, clinical signals and pathology, education, supply chain and logistics.
         </p>
       </section>
 
@@ -372,13 +385,13 @@
           <li><a href="https://github.com/sudouserx">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/ebrahim-aliyou-wudu">LinkedIn</a></li>
           <li><a href="https://huggingface.co/sudouserx">Hugging Face</a></li>
-          <li><a href="assets/Ebrahim_Aliyou_Wudu_CV.pdf?v=20260928">CV (PDF)</a></li>
+          <li><a href="assets/Ebrahim_Aliyou_Wudu_Resume.pdf?v=20261029">CV (PDF)</a></li>
         </ul>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Academic homepage · Last updated September 2026</p>
+      <p>Academic homepage · Last updated October 2026</p>
     </footer>
   </div>
 </body>
