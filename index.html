@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ebrahim Aliyou Wudu</title>
-  <meta name="description" content="Applied AI engineer and researcher building and evaluating AI for low-resource settings—LLM prototypes, clinical models, data pipelines, and rigorous accuracy and safety testing in Africa.">
+  <meta name="description" content="Applied AI engineer and researcher building and evaluating AI for low-resource settings in Africa—offline LLMs, an ECG robustness paper accepted at PanAfriCon AI 2026, and a direct entry to the Enzi Prize.">
   <meta name="author" content="Ebrahim Aliyou Wudu">
   <link rel="canonical" href="https://sudouserx.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ebrahim Aliyou Wudu">
-  <meta property="og:description" content="Applied AI engineer and researcher shipping and evaluating robust AI—offline LLMs, clinical models, and pipelines for underserved communities in Africa.">
+  <meta property="og:description" content="Applied AI engineer and researcher shipping and evaluating robust AI for Africa—offline LLMs, an accepted ECG paper, and a direct entry to the Enzi Prize Local AI track.">
   <meta property="og:image" content="assets/profile.jpg">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Ebrahim Aliyou Wudu">
-  <meta name="twitter:description" content="Applied AI engineer and researcher shipping and evaluating robust AI—offline LLMs, clinical models, and pipelines for underserved communities in Africa.">
+  <meta name="twitter:description" content="Applied AI engineer and researcher shipping and evaluating robust AI for Africa—offline LLMs, an accepted ECG paper, and a direct entry to the Enzi Prize Local AI track.">
   <meta name="twitter:image" content="assets/profile.jpg">
 
   <link rel="icon" href="assets/profile.jpg" type="image/jpeg">
@@ -30,6 +30,7 @@
     <nav class="site-nav" aria-label="Page sections">
       <a href="#about">About</a>
       <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
       <a href="#leadership">Leadership</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
@@ -48,7 +49,7 @@
           <li><a href="https://github.com/sudouserx">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/ebrahim-aliyou-wudu">LinkedIn</a></li>
           <li><a href="https://huggingface.co/sudouserx">Hugging Face</a></li>
-          <li><a href="assets/Ebrahim_Aliyou_Wudu_Resume.pdf?v=20261029">CV (PDF)</a></li>
+          <li><a href="assets/Ebrahim_Aliyou_Wudu_Resume.pdf?v=20261118">CV (PDF)</a></li>
         </ul>
       </div>
       <img
@@ -63,14 +64,21 @@
       <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
         <p>
-          I am an applied AI engineer and researcher focused on building systems that remain
-          robust and usable in resource-constrained settings—from ECG diagnostics under real
-          clinical noise to offline, multilingual agricultural tools for East African farmers.
-          I ship working prototypes with LLMs, pair them with solid data pipelines and backend
-          engineering, and test them rigorously for accuracy, calibration, and safety. I am
-          seeking graduate training that bridges technical AI research with human-centered
-          systems design, toward a career developing health and agriculture AI for underserved
-          communities in Ethiopia and across Africa.
+          I am an applied AI engineer and researcher building and evaluating AI systems
+          for low-resource settings in Africa—from ECG diagnostics under real clinical
+          noise to offline, multilingual agricultural tools for East African farmers.
+          I ship working LLM prototypes on CPU-only hardware, back them with solid data
+          pipelines and backend engineering, and test them rigorously for accuracy,
+          calibration, and safety. Recent work includes an offline farming assistant
+          that placed 2nd of 1,856 at the Africa Deep Tech Challenge 2026 and earned a
+          direct entry into the <a href="https://enziprize.org/">Enzi Prize</a> (Local
+          AI track); a robustness benchmark for self-supervised ECG models accepted at
+          PanAfriCon AI 2026 (Springer CCIS); an uncertainty-aware histopathology
+          cascade under journal review; and an exam-prep platform used by 500+ monthly
+          active students. I am seeking graduate training that bridges technical AI
+          research with human-centered systems design, toward a career developing
+          health and agriculture AI for underserved communities in Ethiopia and across
+          Africa.
         </p>
         <p>
           I explain technical work plainly and enjoy teaching others to use it.
@@ -80,10 +88,10 @@
           <a href="https://www.universityofgalway.ie/">University of Galway</a>,
           supervised by Dr. Saeed Alsamhi, and at
           <a href="https://www.linkedin.com/in/haqila-lab-352018373">Haqila Lab</a>,
-          Jimma University, advised by Dr. Gelan Ayana Zewdie. I hold a B.Tech in Computer
-          Science and Engineering from the Hindustan Institute of Technology and Science
-          (CGPA 8.79/10, First Class with Distinction) and am applying to Ph.D. and master’s
-          programs.
+          Jimma University, advised by Dr. Hika Barki (Pukyong National University).
+          I hold a B.Tech in Computer Science and Engineering from the Hindustan
+          Institute of Technology and Science (CGPA 8.79/10, First Class with
+          Distinction) and am applying to Ph.D. and master’s programs.
         </p>
       </section>
 
@@ -99,18 +107,24 @@
             AI Research Intern, University of Galway · Supervisor: Dr. Saeed Alsamhi
           </p>
           <p>
-            Designed an evidence-guided adaptive cascade combining EfficientNet-B0, TinyViT,
-            and the frozen UNI pathology foundation model, with calibrated confidence, conformal
-            uncertainty, and learned modality gating for selective escalation—an architecture
-            built specifically to work under limited training data and compute.
+            Designed an adaptive cascade in which a calibrated EfficientNet-B0 router
+            uses conformal prediction to accept confident cases and escalate only
+            uncertain ones to TinyViT and a frozen UNI foundation model, fused by a
+            learned modality gate. Trained end to end on a single 16&nbsp;GB T4 GPU,
+            for settings with limited training data and compute.
           </p>
           <p>
-            The system reached 88.77% external accuracy on the patient-disjoint CRC-VAL-HE-7K
-            cohort, compared with 78.59% for a standalone CNN and 88.22% for brute-force
-            ensembling, while reducing total cohort inference latency by about 35%. Component
-            ablations, corruption tests, and explainability analyses (Grad-CAM++, attention
-            rollout, SHAP) were used to identify branch contributions and robustness under
-            distribution shift.
+            The system reached 88.77% accuracy on the patient-disjoint CRC-VAL-HE-7K
+            cohort, versus 78.59% for a standalone CNN and 88.22% for a brute-force
+            ensemble, while cutting inference latency by about 35% relative to that
+            ensemble. Leave-one-component-out ablations, blur and stain corruption
+            tests, and multi-method explainability (Grad-CAM++, attention rollout,
+            SHAP), audited with perturbation-curve faithfulness metrics, were used to
+            check branch contributions and robustness under distribution shift.
+          </p>
+          <p class="muted">
+            Submitted to <a href="https://www.cureusjournals.com/">Cureus Journals</a>
+            (Springer Nature), under review.
           </p>
           <p class="entry-links">
             <a href="https://drive.google.com/file/d/1XWOr9QJXjixXYsb4fdPVw7WIfxFWAWuN/view?usp=sharing">Paper</a>
@@ -119,26 +133,36 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h3>Self-Supervised ECG Representation Learning Under Graded Noise</h3>
+            <h3>Robustness of Self-Supervised ECG Representations to Graded Acquisition Noise</h3>
             <span class="dates">May 2026 – Present</span>
           </div>
           <p class="meta">
-            AI Research Intern, Haqila Lab, Jimma University · Advisor: Dr. Gelan Ayana Zewdie
+            AI Research Intern, Haqila Lab, Jimma University · Advisor: Dr. Hika Barki (Pukyong National University)
           </p>
           <p>
-            Benchmarking contrastive, reconstructive, and latent-predictive self-supervised
-            methods for ECG representation learning under progressively graded physiological
-            and environmental artifacts, including noise types specific to low-resource clinical
-            settings (for example, inverter switching noise, 50&nbsp;Hz powerline interference,
-            and electrode pop). The study evaluates robustness, calibration, representation
-            stability, and latent-space behavior to help practitioners choose models suited to
-            their deployment setting and safety threshold.
+            Built a paired, graded-corruption benchmark on PTB-XL comparing four
+            self-supervised recipes (SimCLR, CLOCS, MAE, I-JEPA) and a supervised
+            reference on a shared ViT-S, each pretrained from scratch with 3 seeds
+            and evaluated by frozen linear probe. The benchmark covers 162
+            deterministic corruption conditions—real NSTDB artefacts, synthetic
+            powerline, electrode-pop, and inverter noise, and mixtures—from −6 to
+            24&nbsp;dB SNR, scored on AUROC, calibration (ECE), fixed-threshold F1,
+            and CKA / effective-rank shifts.
           </p>
           <p>
-            Findings submitted to the PanAfriCon AI Conference; abstract accepted, full paper
-            under review.
+            AUROC alone hides failures: under −6&nbsp;dB electrode motion, MAE and
+            I-JEPA kept AUROC near 0.80 while NORM-class F1 collapsed to
+            ≤&nbsp;0.004, and ECE rose from under 0.02 to 0.16–0.17 for SimCLR and
+            MAE. Representation-geometry shifts track noise severity but do not
+            reliably rank encoders, and seed variance can exceed between-method
+            differences.
+          </p>
+          <p class="muted">
+            Accepted at PanAfriCon AI 2026, to appear in Springer CCIS.
           </p>
           <p class="entry-links">
+            <a href="https://drive.google.com/file/d/1ZnWFrkR-JizfnKmAh0WLhw19b959VvIm/view?usp=sharing">Preprint</a>
+            ·
             <a href="https://github.com/sudouserx/Representation-Decay-in-Self-Supervised-ECG-Models-Under-Graded-Noise">Code</a>
           </p>
         </article>
@@ -152,26 +176,41 @@
             Independent research · Apart Research sprint
           </p>
           <p>
-            Investigated whether latent affective steering produces controlled semantic change
-            or broader behavioral degradation by intervening in late-layer residual streams
-            (Layers 32 and 40) of Gemma-3-12B. Steering vectors were extracted and injected at
-            strengths α ∈ {0.0, 0.05, 0.1} against magnitude-matched random-vector controls,
-            and evaluated on self-reported valence, refusal behavior, sentiment, and GSM8K
-            reasoning under a 256-token generation constraint.
-          </p>
-          <p>
-            Affective steering produced targeted semantic shifts, while high-magnitude random
-            perturbations caused token looping and structural collapse. Refusal-oriented
-            steering frequently produced hyper-rationalization rather than explicit refusal.
-            I owned hypothesis design, experiment implementation, representation-engineering
-            code, quantitative analysis, and manuscript preparation.
+            Led design, implementation, analysis, and write-up of a study testing
+            whether residual-stream steering gives controlled change or general
+            degradation, using magnitude-matched random-vector controls. Affective
+            steering produced targeted semantic shifts; stronger random perturbations
+            caused token looping and structural collapse.
           </p>
           <p class="entry-links">
+            <a href="https://apartresearch.com/sprints/projects/steering-the-machine-the-impact-of-latent-state-manipulation-on-llm-selfreported-valence-and-cognitive-tradeoffs-in-gemma312b-pxii">Project page</a>
+            ·
             <a href="https://drive.google.com/file/d/1XAVYxb2WEs87yR-1KqYiZG8kHFlKuYhW/view?usp=sharing">Preprint</a>
             ·
             <a href="https://github.com/sudouserx/Causal-Disentanglement-of-Valence-Related-Signals-in-Gemma-3-12B">Code</a>
           </p>
         </article>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <ol class="awards">
+          <li>
+            <strong>E. A. Wudu</strong> and H. Barki. Robustness of Self-Supervised
+            ECG Representations to Graded Acquisition Noise: Task Performance,
+            Calibration, and Representation Stability on PTB-XL.
+            <em>PanAfriCon AI 2026</em>, Communications in Computer and Information
+            Science (<a href="https://link.springer.com/series/7899">Springer CCIS</a>).
+            Accepted, in press.
+          </li>
+          <li>
+            <strong>E. A. Wudu</strong>, A. V. Shvetsov, H. Alzain, and S. H. Mohammed.
+            sentinelMAS: An Evidence-Guided Multi-Agent AI Framework for Efficient
+            Histopathology Classification. Submitted to
+            <a href="https://www.cureusjournals.com/">Cureus Journals</a>
+            (Springer Nature), under review.
+          </li>
+        </ol>
       </section>
 
       <section id="leadership" aria-labelledby="leadership-heading">
@@ -186,48 +225,50 @@
             Offline agricultural AI assistant for East African farmers · Addis Ababa, Ethiopia
           </p>
           <p>
-            Designed an offline-first assistant for crop and livestock questions in English and
-            Swahili, built to run on CPU-only devices where connectivity and extension advice
-            are limited. Curated training data from about 1.45M farmer queries into supervised
-            fine-tuning sets in both languages, plus adversarial and multi-turn examples and DPO
-            preference pairs; fine-tuned Gemma with SFT and DPO end to end.
+            Designed an offline-first assistant that answers crop and livestock
+            questions in English and Swahili on CPU-only devices, for areas where
+            connectivity and extension advice are limited. Curated about 1.45M farmer
+            queries into 25,506 English and 23,885 Swahili SFT rows, plus adversarial
+            and multi-turn examples and 1,224 DPO preference pairs. Fine-tuned Gemma
+            4 E2B with SFT then DPO, running the full pipeline end to end.
           </p>
           <p>
-            Benchmarked GGUF quantizations for quality, speed, and memory—the selected build runs
-            at about 16.8 tokens/sec on a 7&nbsp;GB RAM laptop via llama.cpp, with safety
-            behavior for unsafe pesticide-dose requests and clarifying questions when queries are
-            ambiguous. Placed 2nd among 1,856 participants in the Africa Deep Tech Challenge
-            2026 (US$4,000 prize).
+            Benchmarked GGUF quantizations on quality, speed, and memory. The selected
+            build runs at about 16.8 tokens/s, 11.3&nbsp;s time to first token, and
+            3.1–3.8&nbsp;GB peak memory on a 7&nbsp;GB RAM Ryzen 3 laptop (llama.cpp).
+            Training covers unsafe pesticide-dose requests, and the assistant asks
+            clarifying questions instead of guessing on ambiguous queries.
+          </p>
+          <p>
+            Placed 2nd of 1,856 participants at the Africa Deep Tech Challenge 2026
+            (US$4,000 prize). On the strength of that result, granted direct entry
+            to, and currently competing in, the
+            <a href="https://enziprize.org/">Enzi Prize</a> Local AI track.
           </p>
           <p class="entry-links">
             <a href="https://devpost.com/software/kuza-ai">Devpost</a>
             ·
-            <a href="https://huggingface.co/kuzaai">Models and data</a>
+            <a href="https://huggingface.co/kuzaai/kuza-gemma-4-e2b">Model</a>
             ·
-            <a href="https://github.com/sudouserx/adtc-2026-submission-template">Pipeline</a>
+            <a href="https://github.com/sudouserx/adtc-pipeline">Pipeline</a>
           </p>
         </article>
 
         <article class="entry">
           <div class="entry-head">
-            <h3>Co-Founder and Lead Engineer, Gobez</h3>
-            <span class="dates">January 2026 – Present</span>
+            <h3>Co-Founder, Gobez</h3>
+            <span class="dates">January 2026 – Present (paused)</span>
           </div>
           <p class="meta">
-            Free exam-preparation platform for Ethiopian Grade 12 students · gobez.cloud
+            Free exam-preparation platform for Ethiopian Grade 12 students ·
+            <a href="https://gobez.cloud/">gobez.cloud</a>
           </p>
           <p>
-            Founded Gobez after learning that only 3.4% of Ethiopian Grade 12 students passed
-            the national university-entrance exam in 2024, despite a crowded market of existing
-            “AI” study tools—and identified that those tools failed because they surfaced raw
-            performance data instead of actionable, natural-language guidance.
-          </p>
-          <p>
-            Led engineering for the platform, including a recommendation engine and Topic
-            Mastery analytics built on five years of solved national exam questions, plus an
-            offline notes feature (“Gobez Bits”) for students without reliable connectivity.
-            Grew the platform to 640 registered students (500+ monthly active) across seven
-            partner schools in Addis Ababa. The platform is currently paused pending funding.
+            Built a recommendation engine and Topic Mastery analytics that turn a
+            student’s results on 5+ years of national exam questions into targeted
+            study guidance, plus an offline notes feature (“Gobez Bits”). Piloted
+            with 7 partner schools in Addis Ababa: 640 registered students and 500+
+            monthly active users. Paused pending funding.
           </p>
         </article>
 
@@ -238,11 +279,14 @@
           </div>
           <p class="meta">Hosted by University of Bradford · Team member</p>
           <p>
-            Joined an international team of four students to design Waste2Wealth, a data-driven
-            circular-economy pipeline connecting organic waste from hotels and supermarkets
-            directly to companies that convert it into new products, targeting the supply and
-            logistics bottleneck in waste processing. Placed 2nd of 6 finalist teams from
-            universities worldwide.
+            Joined an international team of four students to design Waste2Wealth, a
+            data-driven circular-economy pipeline connecting organic waste from hotels
+            and supermarkets directly to companies that convert it into new products,
+            targeting the supply and logistics bottleneck in waste processing. Placed
+            2nd of 6 finalist teams from universities worldwide.
+          </p>
+          <p class="entry-links">
+            <a href="https://www.wtu-n.net/2023/12/hackathon-for-climate-action-2023-winners-announced/">Winners</a>
           </p>
         </article>
 
@@ -251,7 +295,7 @@
             <h3>Campus Ambassador, GeeksforGeeks</h3>
           </div>
           <p>
-            Conducted technical workshops on AI-powered software engineering practices for
+            Ran technical workshops on AI-powered software engineering practices for
             100+ students.
           </p>
         </article>
@@ -261,8 +305,8 @@
             <h3>Executive Committee Member, Blue Screen Programming Club</h3>
           </div>
           <p>
-            Organized a national-level coding hackathon (100+ participants) and mentored
-            first-year students in programming.
+            Helped organize a national-level coding hackathon (100+ participants) and
+            mentored first-year students in programming.
           </p>
         </article>
       </section>
@@ -297,10 +341,11 @@
           </div>
           <p class="meta">Remote, India</p>
           <p>
-            Contributed to Olly (<a href="https://askolly.io">askolly.io</a>), an AI-powered
-            review management product for hotels and restaurants. Built AWS-backed backend
-            infrastructure processing 100,000+ data points per month and integrated B2B
-            subscription and billing workflows across Chargebee, Stripe, and Razorpay.
+            Built AWS-backed backend infrastructure for
+            <a href="https://askolly.io/">Olly</a>, an AI-powered review-management
+            product for hotels and restaurants, processing 100,000+ data points per
+            month. Integrated B2B subscription and billing workflows across
+            Chargebee, Stripe, and Razorpay.
           </p>
         </article>
 
@@ -311,8 +356,8 @@
           </div>
           <p class="meta">Remote, India</p>
           <p>
-            Built multi-client ELT pipelines using Meltano, Airbyte, AWS EC2, Shopify
-            extraction, and dbt transformation workflows.
+            Built multi-tenant ELT pipelines with Meltano, Airbyte, AWS EC2, and dbt,
+            including Shopify data extraction and transformation.
           </p>
         </article>
 
@@ -333,20 +378,17 @@
         <h2 id="awards-heading">Awards and honours</h2>
         <ul class="awards">
           <li>
+            <strong>Enzi Prize, Local AI track</strong>, 2026.
+            Direct-entry participant, awarded for Africa Deep Tech Challenge results;
+            currently competing.
+          </li>
+          <li>
             <strong>2nd Place, Africa Deep Tech Challenge</strong>, 2026.
             Kuza AI offline agricultural assistant (US$4,000 prize; 2nd of 1,856 participants).
           </li>
           <li>
             <strong>Study in India Scholarship</strong>, Government of India, 2021.
             Full merit-based government scholarship covering tuition and living costs.
-          </li>
-          <li>
-            <strong>2nd Place, WTUN Hackathon for Climate Action</strong>, 2023.
-            Waste2Wealth circular-economy prototype.
-          </li>
-          <li>
-            <strong>3rd Place, Hack-o-Hits Hackathon</strong>, 2023.
-            Wearable-assisted medicine intake tracking system.
           </li>
         </ul>
       </section>
@@ -355,9 +397,15 @@
         <h2 id="skills-heading">Technical skills</h2>
         <p>
           <strong>LLMs and applied AI:</strong>
-          QLoRA and DPO fine-tuning, dataset curation, quantization and edge inference
-          (llama.cpp, GGUF), RAG, prompt and safety design, model evaluation and calibration,
-          explainability (Grad-CAM++, SHAP, conformal uncertainty).
+          SFT, QLoRA, and DPO fine-tuning; dataset curation; quantization and edge
+          inference (llama.cpp, GGUF); RAG; prompt and safety design; activation steering.
+        </p>
+        <p>
+          <strong>ML research and evaluation:</strong>
+          self-supervised learning (contrastive, masked, JEPA); robustness benchmarking;
+          calibration (ECE, temperature scaling); conformal prediction; bootstrap and
+          multiple-testing statistics; representation analysis (CKA, effective rank);
+          explainability (Grad-CAM++, SHAP, attention rollout).
         </p>
         <p>
           <strong>Data and software engineering:</strong>
@@ -385,13 +433,13 @@
           <li><a href="https://github.com/sudouserx">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/ebrahim-aliyou-wudu">LinkedIn</a></li>
           <li><a href="https://huggingface.co/sudouserx">Hugging Face</a></li>
-          <li><a href="assets/Ebrahim_Aliyou_Wudu_Resume.pdf?v=20261029">CV (PDF)</a></li>
+          <li><a href="assets/Ebrahim_Aliyou_Wudu_Resume.pdf?v=20261118">CV (PDF)</a></li>
         </ul>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Academic homepage · Last updated October 2026</p>
+      <p>Academic homepage · Last updated November 2026</p>
     </footer>
   </div>
 </body>
